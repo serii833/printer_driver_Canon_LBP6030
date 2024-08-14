@@ -21,7 +21,7 @@ sudo apt install libcupsimage2
 ```
 
 
-working driver `linux-UFRIILT-drv-v500-uken-18.tar.gz`
+working driver `linux-UFRIILT-drv-v500-uken-18.tar.gz`  
 unpack and run `sudo ./install.sh`
 
 
