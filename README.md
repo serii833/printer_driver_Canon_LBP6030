@@ -36,3 +36,33 @@ https://wiki.archlinux.org/title/CUPS/Troubleshooting
 https://www.cups.org/doc/admin.html
 
 
+
+## Samba server
+```bash
+sudo apt install samba
+```
+
+/etc/samba/smb.conf
+```
+[global]
+    printing = CUPS
+    load_printers = no
+
+[printers]
+   comment = All Printers
+   browseable = yes
+   path = /var/spool/samba
+   printable = yes
+   guest ok = yes
+   read only = yes
+   create mask = 0700
+
+[Canon_LBP6030]
+   path = /var/tmp
+   browseable = yes
+   printable = yes
+   printer name = Canon_LBP6030
+```
+
+
+
